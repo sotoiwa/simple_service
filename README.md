@@ -1,4 +1,4 @@
-# simple_service
+# simple_service ![CodeBuild](https://codebuild.ap-northeast-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoidndrOStGUnJwMjU3cDQrdTk2U3JMbFFEekRvU1RyekpIN2MzYkxpK2txYTlDeXBUYmQxcjZHK1V1WmsxamZ2djZjUVJjdWo3YkE2cVpsdFBmaWw4aWRrPSIsIml2UGFyYW1ldGVyU3BlYyI6IjFISGxwU2lkWVVZdlg1Wk4iLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
 
 マイクロサービスのテスト用のサンプルアプリケーション。
 
