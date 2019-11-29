@@ -1,0 +1,19 @@
+version: 0.2
+
+env:
+  variables:
+    "REPO": "simple-service"
+    "TAG": "latest"
+phases:
+  install:
+    runtime-versions:
+      docker: 18
+  pre_build:
+    commands:
+    - $(aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION)
+  build:
+    commands:
+    - docker build -t $REPO:$TAG .
+  post_build:
+    commands:
+    - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$REPO:$TAG
